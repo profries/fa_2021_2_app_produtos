@@ -1,0 +1,25 @@
+GET http://localhost:3000/api/produtos
+
+###
+GET http://localhost:3000/api/produtos/4
+
+###
+POST http://localhost:3000/api/produtos
+Content-Type: application/json
+
+{
+    "nome": "produto1",
+    "preco": 30
+}
+
+###
+PUT http://localhost:3000/api/produtos/1
+Content-Type: application/json
+
+{
+    "nome": "produto1",
+    "preco": 30
+}
+
+###
+DELETE http://localhost:3000/api/produtos/1
