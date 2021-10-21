@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "tsc && node dist/app.js"
+    "compile": "tsc && node dist/app.js",
+    "start": "nodemon -e ts --exec \"npm run compile\""
   },
   "keywords": [],
   "author": "",
