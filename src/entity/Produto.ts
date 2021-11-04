@@ -1,4 +1,4 @@
-import {Entity, PrimaryGeneratedColumn, Column} from "typeorm";
+import {Entity, PrimaryGeneratedColumn, Column, OneToOne} from "typeorm";
 
 @Entity()
 export class Produto {
@@ -11,5 +11,6 @@ export class Produto {
 
     @Column()
     preco: number;
+
 
 }
